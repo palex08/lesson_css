@@ -1,0 +1,71 @@
+
+
+#card_1, #card_2, #card_3 {
+    position: absolute;
+    top: 10%;
+}
+
+#card_1 {
+    left: 0;
+}
+
+#card_2 {
+    left: 33%;
+}
+
+#card_3 {
+    left: 66%;
+}
+
+.card_WII {
+    width: 30%;
+    height: 115%;
+    background: lightgray;
+    border-radius: 10px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    transition: background 1s, box-shadow 1s;
+}
+
+img {
+    width: 50%;
+    border-radius: 10px;
+    transition: transform 1.5s, top 1.5s;
+}
+
+img:hover {
+    position: relative;
+    top: 100px;
+    transform: scale(1.5);
+}
+
+.photo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    margin: 5%;
+    text-align: left;
+    font-size: 100%;
+    position: relative;
+
+}
+
+.info h1 {
+    text-align: center;
+
+}
+
+.card_WII:hover {
+    background: darkgray;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+

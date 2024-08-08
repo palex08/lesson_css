@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Basic Bootstrap Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--    <style>-->
+    <!--        .card {-->
+    <!--            height: 100%;-->
+    <!--            a {-->
+    <!--                position: absolute;-->
+    <!--                bottom: 10px;-->
+    <!--                left: 20px;-->
+    <!--            }-->
+    <!--        }-->
+    <!--    </style>-->
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 103%;
+            position: relative;
+        }
+        .card-body {
+            flex-grow: 1;
+        }
+        .card a {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+<!-- Site Header -->
+<header class="bg-dark text-white p-3">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="h3">Великая Отечественная война</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white"
+                                            href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D1%8F_%D0%9E%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B2%D0%BE%D0%B9%D0%BD%D0%B0">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container my-4">
+    <!-- Slider Section -->
+    <section id="slider" class="mb-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="war_1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="war_2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="war_3.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="mb-4">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <img src="Zhukov.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Георгий Константинович Жуков</h5>
+                        <p class="card-text">В годы Великой Отечественной войны занимал посты начальника Генерального
+                            штаба РККА (июнь-июль 1941 г.),
+                            члена
+                            Ставки Главного командования (с 23 июня 1941 г.), Ставки Верховного Командования (с 10 июля
+                            1941 г.),
+                            Ставки
+                            Верховного Главнокомандования (с 8 августа 1941 г.), командующего Ленинградским фронтом (с
+                            14 сентября),
+                            командующего Западным фронтом (с 10 октября).<br>
+                            С 26 августа 1942 г. являлся заместителем Верховного Главнокомандующего; с 27 августа 1942
+                            года — первый
+                            заместитель Народного комиссара обороны СССР.<br>
+                            Командовал фронтами: Резервным, Ленинградским, Западным (одновременно был главкомом
+                            Западного
+                            направления), 1-м
+                            Украинским и 1-м Белорусским.</p>
+                        <a href="https://ru.wikipedia.org/wiki/Жуков,_Георгий_Константинович" target="_blank"
+                           class="btn btn-primary">Статья в Википедии</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <img src="Semyon_Budenny.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Семён Михайлович Будённый</h5>
+                        <p class="card-text">Во время Великой Отечественной войны, оставаясь первым заместителем наркома
+                            обороны СССР, входил в состав
+                            Ставки
+                            Верховного Главнокомандования (23 июня 1941 — 10 февраля 1945).<br> Вечером 21 июня 1941
+                            года был
+                            назначен
+                            командующим так называемой группой «армий второй линии» со штабом в Брянске (член Военного
+                            совета —
+                            секретарь ЦК
+                            ВКП(б)).</p>
+                        <a href="https://ru.wikipedia.org/wiki/Будённый,_Семён_Михайлович" target="_blank"
+                           class="btn btn-primary">Статья в Википедии</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <div class="card">
+                    <img src="Bagramyan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Иван Христофорович Баграмян</h5>
+                        <p class="card-text">В начале Великой Отечественной войны — начальник оперативного отдела штаба
+                            Юго-Западного фронта,
+                            начальник
+                            оперативной группы Юго-Западного направления и начальник штаба Юго-Западного фронта.<br>
+                            С июля 1942 года командовал армией, с ноября 1943 года — войсками 1-го Прибалтийского фронта
+                            (с марта
+                            1945 —
+                            Земландская группа войск), с
+                            апреля 1945 года — войсками 3-го Белорусского фронта.</p>
+                        <a href="#https://ru.wikipedia.org/wiki/Баграмян,_Иван_Христофорович" target="_blankv"
+                           class="btn btn-primary">Статья в Википедии</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Section -->
+    <section id="accordionSection" class="mb-4">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Первый период (22 июня 1941 г. — ноябрь 1942 г.).
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Нападение Германии на СССР. Начальный период войны. Крах блицкрига. Битва за Москву. Неудачи и
+                        поражения лета 1942 г.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Второй период (ноябрь 1942 г. — декабрь 1943 г.).
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Коренной перелом в ходе войны. Победы в Сталинградской и Курской битвах, в битве за Днепр.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Третий период (январь 1944 г. — 9 мая 1945 г.).
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Изгнание врага за пределы территории СССР. Освобождение от оккупации стран Европы. Распад
+                        фашистского блока. Берлинская операция. Безоговорочная капитуляция Германии.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contact Information</h5>
+                <p>Email: contact@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white mr-2">Facebook</a>
+                <a href="#" class="text-white mr-2">Twitter</a>
+                <a href="#" class="text-white">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
